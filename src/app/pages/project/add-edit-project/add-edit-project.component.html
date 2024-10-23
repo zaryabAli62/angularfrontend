@@ -1,0 +1,45 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title
+        >
+        <div class="cardTitle">
+        <div>{{ projectId ? "Edit" : "Create" }} Project</div>
+        <div>
+          <button mat-stroked-button color="accent" class="btn-block" (click)="backTolist()">
+            Back to List
+          </button>
+        </div>
+     </div>   
+        </mat-card-title
+      >
+    </mat-card-header>
+
+    <form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+      <cs-input
+        formControlName="title"
+        [label]="'Project Name'"
+        [name]="'title'"
+        [placeholder]="'Please enter project name'"
+      ></cs-input>
+
+      <cs-text-editor
+        formControlName="content"
+        [label]="'Project Description'"
+        [isSubmitted]="isSubmitted"
+        [placeholder]="'Please enter project description'"
+        [name]="'description'"
+        (doubleClickEvent)="openWordDictionary($event)"
+      ></cs-text-editor>
+
+      <button
+        mat-stroked-button
+        color="accent"
+        class="btn-block"
+        [disabled]="projectForm.invalid"
+      >
+        {{ projectId ? "Update" : "Create" }}
+      </button>
+    </form>
+  </mat-card>
+</div>

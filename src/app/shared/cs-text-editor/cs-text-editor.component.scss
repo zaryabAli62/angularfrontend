@@ -1,0 +1,109 @@
+:host::ng-deep {
+  .ql-toolbar {
+      &.ql-snow {
+          border: 1px solid var(--bs-border-color) !important;
+          border-bottom: 0 !important;
+          border-radius: 6px 6px 0 0 !important;
+          padding: 0 !important;
+
+          .ql-formats {
+              margin-right: 0 !important;
+          }
+      }
+  }
+
+  .ql-container {
+      &.ql-snow {
+          border: 1px solid var(--bs-border-color) !important;
+          border-radius: 0 0 6px 6px !important;
+          min-height: 100px;
+
+          &.ql-disabled {
+              border-radius: 6px 6px 6px 6px !important;
+              background-color: #eff2f7;
+              opacity: 1;
+          }
+      }
+  }
+
+  .ql-editor {
+      padding: 0.47rem 0.75rem;
+      // min-height: 100px;
+
+      &:before {
+          font-style: normal;
+          opacity: 0.7;
+      }
+  }
+
+  .custom-notes {
+      .ql-editor {
+          // min-height: 245px;
+      }
+
+      .ql-container.ql-snow {
+          border-radius: 0 0 0px 0px !important;
+          border-left: 0 !important;
+          border-right: 0 !important;
+      }
+
+      .ql-toolbar.ql-snow {
+          border-radius: 6px 6px 0 0 !important;
+          padding: 0 !important;
+          border: 0 !important;
+      }
+  }
+}
+
+
+
+:host::ng-deep {
+  .ql-toolbar {
+      &.ql-snow {
+          border: 1px solid var(--bs-border-color) !important;
+          border-bottom: 0 !important;
+          border-radius: 6px 6px 0 0 !important;
+          padding: 0 !important;
+
+          .ql-formats {
+              margin-right: 0 !important;
+          }
+      }
+  }
+
+  .ql-container {
+      &.ql-snow {
+          border: 1px solid var(--bs-border-color) !important;
+          border-radius: 0 0 6px 6px !important;
+          // min-height: 100px;
+
+          &.ql-disabled {
+              border-radius: 6px 6px 6px 6px !important;
+              background-color: #eff2f7;
+              opacity: 1;
+          }
+      }
+  }
+
+  .ql-editor {
+      padding: 0.47rem 0.75rem;
+      min-height: 100px;
+      max-height: 250px;
+
+      &:before {
+          font-style: normal;
+          opacity: 0.7;
+      }
+  }
+}
+.input-error {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #ad2a2a;
+  &.border{
+      border-color: #ad2a2a !important;
+  }
+}
+
+

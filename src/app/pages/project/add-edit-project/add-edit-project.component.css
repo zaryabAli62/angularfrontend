@@ -1,0 +1,39 @@
+
+      
+      mat-card {
+        width: 60%; /* Sets the width of the card to 60% of the viewport */
+        border-color: 1ox solid black !important;
+      }
+      
+      .full-width {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      
+      h2 {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      
+      p {
+        text-align: center;
+        margin-bottom: 16px;
+      }
+      
+      mat-card-actions {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+
+      .box {
+        width: 700px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .cardTitle{
+        display: flex;
+        justify-content: space-between;
+      }

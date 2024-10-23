@@ -1,0 +1,37 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+        <mat-card class="box">
+          <mat-card-header>
+            <mat-card-title>{{register  ? 'Sign Up':'Sign In '}}</mat-card-title>
+          </mat-card-header>
+      
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <!-- <mat-label>Username</mat-label> -->
+              <cs-input
+              formControlName="username"
+              [label]="'User Name'"
+              [name]="'username'"
+              [placeholder]="'Please enter username'"
+       
+          ></cs-input>
+              <!-- <mat-error *ngIf="loginForm.get('username')?.hasError('required')">
+                Username is required
+              </mat-error> -->
+      
+             
+              <cs-input
+              formControlName="password"
+              [label]="'Password'"
+              [name]="'password'"
+              [placeholder]="'Please enter Passwrod'"
+              [isSubmitted]="isFormSubmitted"
+              ></cs-input>
+             
+              <div class="signBtn" [routerLink]="register?'/login':'/register'" >{{register  ? 'Click to Sign In':'Click to Sign Up'}}</div>
+      
+            <button mat-stroked-button color="accent" class="btn-block" [disabled]="loginForm.invalid">
+                {{register  ? 'Sign Up':'Sign In '}}
+            </button>
+          </form>
+        </mat-card>
+      </div>
+      

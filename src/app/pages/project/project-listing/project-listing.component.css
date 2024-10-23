@@ -1,0 +1,18 @@
+.tablelist{
+
+padding: 100px !important;
+
+
+
+}
+
+.button{
+        margin-bottom: 1rem;
+        background-color: white;
+        display: flex;
+        justify-content: end;
+        
+}
+button{
+        width: 200px;
+}
